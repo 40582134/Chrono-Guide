@@ -1,0 +1,91 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+#app {
+  @apply flex flex-col h-screen;
+}
+
+#header {
+  @apply bg-gray-200 p-4 flex items-center justify-between;
+}
+
+#header > div {
+  @apply flex items-center;
+}
+
+#logo {
+  @apply h-8 mr-4;
+}
+
+#site-title {
+  @apply text-xl font-bold;
+}
+
+#search-input {
+  @apply border border-gray-400 rounded py-1 px-2 mr-4;
+}
+
+#search-button {
+  @apply bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-4 rounded;
+}
+
+#content {
+  @apply flex-1 flex;
+}
+
+#sidebar {
+  @apply bg-gray-100 w-64 p-4;
+}
+
+#sidebar ul {
+  @apply mb-4;
+}
+
+#sidebar li {
+  @apply mb-2;
+}
+
+#sidebar a {
+  @apply block py-2 hover:bg-gray-200;
+}
+
+#sidebar ul ul {
+  @apply pl-4;
+}
+
+#main-content {
+  @apply flex-1 p-8 overflow-auto;
+}
+
+#main-heading,
+#main-heading-2 {
+  @apply text-2xl font-bold mb-4;
+}
+
+#description-1,
+#description-2 {
+  @apply mb-4;
+}
+
+#button-container {
+  @apply flex justify-center mb-4;
+}
+
+#button-container a {
+  @apply bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mr-4;
+}
+
+#footer {
+  @apply bg-gray-800 text-white p-4 text-center;
+}
+
+#footer span {
+  @apply mx-4;
+}
+
+#footer a {
+  @apply text-blue-400 hover:underline;
+}
